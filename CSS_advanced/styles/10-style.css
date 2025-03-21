@@ -26,6 +26,9 @@
     --line-height-small: 1.2;
     --line-height-base: 1.5;
     --line-height-big: 1.8;
+
+    /* New custom property for section header alignment */
+    --section-header-align: center; /* Set horizontal alignment to center */
 }
 
 /* Ensure html font-size is set to 62.5% of the normal size */
