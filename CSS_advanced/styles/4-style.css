@@ -12,6 +12,10 @@
     --font-family-title: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Revisit the section-tagline and card-category declarations */
 .section-tagline {
     color: var(--color-primary);
