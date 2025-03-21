@@ -8,6 +8,11 @@
     --text-color: var(--color-black);
 }
 
+html {
+    scroll-behavior: smooth;
+   
+}
+
 /* Revisit the section-tagline and card-category declarations */
 .section-tagline {
     color: var(--color-primary);
