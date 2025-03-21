@@ -30,6 +30,7 @@
 
 /* Ensure html font-size is set to 62.5% of the normal size */
 html {
+    scroll-behavior: smooth;
     font-size: 62.5%; /* Sets the font size to 62.5% of the normal size */
 }
 
