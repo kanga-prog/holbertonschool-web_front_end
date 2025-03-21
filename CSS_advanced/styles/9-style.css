@@ -1,0 +1,64 @@
+/* Define custom properties for the root element */
+:root {
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+
+    /* Define custom font-family properties */
+    --font-family-base: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-family-title: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+    /* Define custom font-size properties */
+    --font-size-small: 1.2rem;
+    --font-size-medium: 1.6rem;
+    --font-size-large: 1.8rem;
+    --font-size-x-large: 2.3rem;
+    --font-size-xx-large: 4.8rem;
+
+    /* Define custom font-weight properties */
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+
+    /* Define custom line-height properties */
+    --line-height-small: 1.2;
+    --line-height-base: 1.5;
+    --line-height-big: 1.8;
+}
+
+/* Ensure html font-size is set to 62.5% of the normal size */
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%; /* Sets the font size to 62.5% of the normal size */
+}
+
+/* Revisit the section-tagline and card-category declarations */
+.section-tagline {
+    color: var(--color-primary);
+}
+
+.card-category {
+    color: var(--color-primary);
+}
+
+/* Revisit the body and anchor declarations */
+body {
+    color: var(--text-color);
+    font-family: var(--font-family-base); /* Set body font-family to font-family-base */
+    font-size: var(--font-size-medium); /* Set body font-size to font-size-medium */
+    font-weight: var(--font-weight-regular); /* Set font-weight in body to font-weight-regular */
+    line-height: var(--line-height-base); /* Set line-height in body to line-height-base */
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none; /* Remove any text decoration (like underlines) from anchor elements */
+}
+
+/* Create a new declaration targeting all 6 levels of heading tags */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-title); /* Set heading font-family to font-family-title */
+    font-weight: var(--font-weight-bold); /* Set font-weight in headings to font-weight-bold */
+}
