@@ -1,12 +1,37 @@
+/* Define custom properties for the root element */
 :root {
-    --font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --font-family-title: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+
+    /* Define custom font-family properties */
+    --font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-family-title: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+/* Revisit the section-tagline and card-category declarations */
+.section-tagline {
+    color: var(--color-primary);
+}
+
+.card-category {
+    color: var(--color-primary);
+}
+
+/* Revisit the body and anchor declarations */
 body {
-    font-family: var(--font-family-base);
+    color: var(--text-color);
+    font-family: var(--font-family-base); /* Set body font-family to font-family-base */
 }
 
+a {
+    color: var(--text-color);
+}
+
+/* Create a new declaration targeting all 6 levels of heading tags */
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-family-title);
+    font-family: var(--font-family-title); /* Set heading font-family to font-family-title */
 }
